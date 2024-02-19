@@ -1,711 +1,729 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AN Poribohon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hockeys</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-            </svg>
+  <body class="bg-[#F7F8F8]">
+    <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] button-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="font-semibold text-md"><a>About</a></li>
+              <li class="font-semibold text-md"><a>Home</a></li>
+              <li class="font-semibold text-md"><a>Destination</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a class="text-[#FF4240] font-medium text-lg">Home</a></li>
-            <li><a class="font-medium text-[#424247] text-lg">About</a></li>
-            <li><a class="font-medium text-[#424247] text-lg">Blog</a></li>
-            <li><a class="font-medium text-[#424247] text-lg">Pages</a></li>
-            <li><a class="font-medium text-[#424247] text-lg">Contact</a></li>
+          <a class="btn btn-ghost text-xl text-[#1DD100]">AN Poribohon</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="font-semibold text-md"><a>Home</a></li>
+            <li class="font-semibold text-md"><a>About</a></li>
+            <li class="font-semibold text-md"><a>Destination</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">Hockey’s</a>
-      </div>
-      <div class="navbar-center hidden lg:block">
-        <ul class="flex gap-10">
-          <li><a class="text-[#FF4240] font-medium text-lg">Home</a></li>
-          <li><a class="font-medium text-[#424247] text-lg">About</a></li>
-          <li><a class="font-medium text-[#424247] text-lg">Blog</a></li>
-          <li><a class="font-medium text-[#424247] text-lg">Pages</a></li>
-          <li><a class="font-medium text-[#424247] text-lg">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <button class="btn btn-ghost btn-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </button>
-        <button class="btn btn-ghost bg-[#FF4240] text-white">
-          Get Ticket
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="carousel w-full rounded-lg">
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="hero h-[550px]" style="background-image: url(./Images/1.png)">
-          <div class="hero-overlay bg-opacity"></div>
+        <div class="navbar-end">
           <div
-            class="hidden lg:block hero-content text-neutral-content bg-[#131318] rounded-lg lg:w-[500px] absolute lg:bottom-8 lg:right-8">
-            <div class="max-w-md">
-              <h1 class="mb-5 font-bold text-[24px]">
-                Meet all the heroes from the field
-              </h1>
-              <p class="mb-5 text-[16px]">
-                In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick .
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle"> ❮ </a>
-          <a href="#slide2" class="btn btn-circle"> ❯ </a>
-        </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <div class="hero h-[550px]" style="background-image: url(./Images/3.png)">
-          <div class="hero-overlay bg-opacity"></div>
-          <div
-            class="hidden lg:block hero-content text-neutral-content bg-[#131318] rounded-lg lg:w-[500px] absolute lg:bottom-8 lg:right-8">
-            <div class="max-w-md">
-              <h1 class="mb-5 font-bold text-[24px]">
-                Meet all the heroes from the field
-              </h1>
-              <p class="mb-5 text-[16px]">
-                In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle"> ❮ </a>
-          <a href="#slide3" class="btn btn-circle"> ❯ </a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <div class="hero h-[550px]" style="background-image: url(./Images/4.png)">
-          <div class="hero-overlay bg-opacity"></div>
-          <div
-            class="hidden lg:block hero-content text-neutral-content bg-[#131318] rounded-lg lg:w-[500px] absolute lg:bottom-8 lg:right-8">
-            <div class="max-w-md">
-              <h1 class="mb-5 font-bold text-[24px]">
-                Meet all the heroes from the field
-              </h1>
-              <p class="mb-5 text-[16px]">
-                In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game,
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle"> ❮ </a>
-          <a href="#slide4" class="btn btn-circle"> ❯ </a>
-        </div>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <div class="hero h-[550px]" style="background-image: url(./Images/2.png)">
-          <div class="hero-overlay bg-opacity"></div>
-          <div
-            class="hidden lg:block hero-content text-neutral-content bg-[#131318] rounded-lg lg:w-[500px] absolute lg:bottom-8 lg:right-8">
-            <div class="max-w-md">
-              <h1 class="mb-5 font-bold text-[24px]">
-                Meet all the heroes from the field
-              </h1>
-              <p class="mb-5 text-[16px]">
-                In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle"> ❮ </a>
-          <a href="#slide2" class="btn btn-circle"> ❯ </a>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="hero-content text-neutral-content bg-[#131318] rounded-lg lg:w-[500px] absolute lg:bottom-8 lg:right-8 lg:hidden mr-6 max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-      <div class="max-w-md">
-        <h1 class="mb-5 font-bold text-[24px]">
-          Meet all the heroes from the field
-        </h1>
-        <p class="mb-5 text-[16px]">
-          In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey,
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="mt-80 flex flex-col items-center justify-center text-center lg:mt-18 mb-10 lg:hidden">
-      <h1 class="text-[#131318] font-bold text-3xl">
-        Professional Hockeys Club
-      </h1>
-      <p class="text-[#131318] my-3">
-        Hockey is a national governing body and is responsible for the
-        management and development of the sport from grassroots to elite
-        activities.
-      </p>
-    </div>
-    <div class="hidden lg:block flex flex-col items-center justify-center text-center lg:mt-18 mb-10">
-      <h1 class="text-[#131318] font-bold text-3xl">
-        Professional Hockeys Club
-      </h1>
-      <p class="text-[#131318] my-3">
-        Welcome to the official website of Hockey India. Find all the live
-        updates, schedule, photos, videos and much more.
-      </p>
-    </div>
-    <div class="flex items-center justify-center flex-col lg:flex-row gap-10">
-      <!-- 1 -->
-      <div class="w-[350px] text-center shadow-sm py-2">
-        <div class="radial-progress text-[#FF4240] -rotate-180" style="--value: 87" role="progressbar">
-          <p class="rotate-180 text-black font-semibold">87%</p>
-        </div>
-        <div class="text-center">
-          <h2 class="text-[#131318] font-bold text-xl">Prayer Facility</h2>
-          <p class="text-[#131318]">
-            Hockey is a term used to denote a family of various types of both
-            summer and winter team sports which originated
-          </p>
-        </div>
-      </div>
-      <!-- 2-->
-      <div class="w-[350px] text-center shadow-sm py-2">
-        <div class="radial-progress text-[#49D293] -rotate-180" style="--value: 95" role="progressbar">
-          <p class="rotate-180 text-black font-semibold">95%</p>
-        </div>
-        <div class="text-center">
-          <h2 class="text-[#131318] font-bold text-xl">Experienced Coach</h2>
-          <p class="text-[#131318]">
-            usually on an ice skating rink with lines and markings specific to
-            the sport. It belongs to a family of sports called hockey.
-          </p>
-        </div>
-      </div>
-      <!-- 3 -->
-      <div class="w-[350px] text-center shadow-sm py-2">
-        <div class="radial-progress text-[rgb(255,223,64)] -rotate-180" style="--value: 90" role="progressbar">
-          <p class="rotate-180 text-black font-semibold">90%</p>
-        </div>
-        <div class="text-center">
-          <h2 class="text-[#131318] font-bold text-xl">Senior Player</h2>
-          <p class="text-[#131318]">
-            Welcome to the official website of Hockey India. Find all the live
-            updates, schedule, photos, videos and much more.
-          </p>
-        </div>
-      </div>
-      <!-- 4 -->
-      <div class="w-[350px] text-center shadow-sm py-2">
-        <div class="radial-progress text-[#4C8DF1] -rotate-180" style="--value: 80" role="progressbar">
-          <p class="rotate-180 text-black font-semibold">80%</p>
-        </div>
-        <div class="text-center">
-          <h2 class="text-[#131318] font-bold text-xl">Training Ground</h2>
-          <p class="text-[#131318]">
-            There are two types of hockey – field and ice. Field hockey,
-            played at the Olympic Summer Games, takes place on an artificial
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="flex flex-col items-center justify-center text-center mt-24 mb-10">
-      <h1 class="text-[#131318] font-bold text-3xl">
-        Professional Hockeys Club
-      </h1>
-      <p class="text-[#131318] my-3">
-        Hockey is a national governing body and is responsible for the
-        management and development of the sport from grassroots to elite
-        activities.
-      </p>
-    </div>
-    <div class="flex gap-5 flex-col lg:flex-row">
-      <div class="hero min-h-[500px] relative" style="background-image: url(./Images/2.png)">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-neutral-content absolute left-5 bottom-5 text-left">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-2xl font-bold">Professional Program</h1>
-            <p class="mb-5">
-              In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game, and the winter ice team skating sports of bandy and ice hockey. This is due to the fact that field hockey
-            </p>
-            <button class="btn bg-[#FF4240] text-white border-0">
-              Get Started
+            class="bg-[#E8FAE5] border border-[#1DD100] w-[90px] flex gap-2 rounded-md"
+          >
+            <button class="text-[20px] text-[#1DD100] font-semibold ml-2">
+              Bus
             </button>
+            <img
+              src="./Images/bus-icon.png"
+              alt=""
+              class="w-[30px] text-[#1DD100] mr-2"
+            />
           </div>
         </div>
       </div>
-      <div class="hero min-h-[500px] relative" style="background-image: url(./Images/3.png)">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-neutral-content absolute left-5 bottom-5 text-left">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-2xl font-bold">Professional Program</h1>
-            <p class="mb-5">
-              Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread from England to other European countries around 1900;
-            </p>
-            <button class="btn bg-[#FF4240] text-white border-0">
-              Get Started
-            </button>
+
+      <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
+        <div
+          class="hero min-h-[80vh] rounded-2xl border-0 bg-white"
+          style="background-image: url(./Images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">End to End Travel with</h1>
+              <span class="text-5xl text-[#1DD100] font-semibold"
+                >AN PORIBOHON</span
+              >
+              <button class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </button>
+              <button class="btn bg-[#1DD100] text-white">Buy Ticket</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="hero min-h-[500px] relative my-5" style="background-image: url(./Images/4.png)">
-      <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-neutral-content absolute left-5 bottom-5 text-left">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-2xl font-bold">Professional Program</h1>
-          <p class="mb-5">
-            Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread from England to other European countries around 1900;
-          </p>
-          <button class="btn bg-[#FF4240] text-white border-0">
-            Get Started
+      </section>
+
+      <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
+        <div class="my-12 flex gap-12 justify-center flex-col lg:flex-row">
+          <div
+            class="bg-[#FFBF0F] flex gap-5 items-center px-5 rounded-xl w-[650px]"
+          >
+            <div class="">
+              <h1 class="text-5xl font-bold">15% OFF</h1>
+              <h3 class="font-semibold">on your next purchase</h3>
+              <button>use by January 2024</button>
+            </div>
+            <img src="./Images/cupon-devider.png" alt="" class="ml-24" />
+            <div class="">
+              <h3 class="font-bold text-5xl">NEW15</h3>
+              <button>Coupon Code</button>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#F78C9C] flex gap-5 items-center px-5 rounded-xl w-[650px]"
+          >
+            <div class="">
+              <h1 class="text-5xl font-bold">15% OFF</h1>
+              <h3 class="font-semibold">on your next purchase</h3>
+              <button>use by January 2024</button>
+            </div>
+            <img src="./Images/cupon-devider.png" alt="" class="ml-24" />
+            <div class="">
+              <h3 class="font-bold text-5xl">Couple20</h3>
+              <button>Coupon Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center flex justify-center items-center">
+          <button
+            class="bg-[#E8FAE5] border border-[#1DD100] px-3 py-2 rounded-md font-semibold"
+          >
+            See All Offer
           </button>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="flex flex-col items-center justify-center text-center mt-24 mb-10">
-      <h1 class="text-[#131318] font-bold text-3xl">Our New Products</h1>
-      <p class="text-[#131318] my-3">
-        Hockey is a national governing body and is responsible for the
-        management and development of the sport from grassroots to elite
-        activities.
-      </p>
-    </div>
-
-    <!-- 1 -->
-    <div class="flex flex-col lg:flex-row gap-5">
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/5.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">Meet all the heroes</h1>
-          <p class="mb-1 text-[16px]">
-            Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread from England to other European countries around 1900;
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>20% </span>
-              <span>Off</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/6.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">World Cup Flags Football</h1>
-          <p class="mb-1 text-[16px]">
-            In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game, and the winter ice team skating sports of bandy and ice hockey. This is due to the fact that field hockey
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>Delivery Fee </span>
-              <span>: Free</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2-->
-    <div class="flex flex-col lg:flex-row gap-5 my-5">
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/7.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">Cap For Hockeys</h1>
-          <p class="mb-1 text-[16px]">
-            Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread from England to other European countries around 1900;
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>20% </span>
-              <span>Off</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/8.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">World Cup Flags Football</h1>
-          <p class="mb-1 text-[16px]">
-            In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game, and the winter ice team skating sports of bandy and ice hockey. This is due to the fact that field hockey
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>Delivery Fee </span>
-              <span>: Free</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="flex flex-col lg:flex-row gap-5">
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/9.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">Meet all the heroes</h1>
-          <p class="mb-1 text-[16px]">
-            Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread from England to other European countries around 1900;
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>20% </span>
-              <span>Off</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-6 lg:w-[700px] shadow-md rounded-xl px-5 py-5 border border-gray-200 flex-col lg:flex-row">
-        <div class="">
-          <img src="./Images/10.png" alt="" class="w-[300px]" />
-        </div>
-        <div class="">
-          <div class="flex lg:gap-11 gap-4">
-            <div class="flex">
-              <img src="./Images/star.png" alt="" />
-              <p class="ml-2">5.0</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/eye.png" alt="" />
-              <p class="ml-2">20</p>
-            </div>
-            <div class="flex">
-              <img src="./Images/heart.png" alt="" />
-              <p class="ml-2">200</p>
-            </div>
-          </div>
-          <h1 class="my-1 font-bold text-[24px]">World Cup Flags Football</h1>
-          <p class="mb-1 text-[16px]">
-            In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game, and the winter ice team skating sports of bandy and ice hockey. This is due to the fact that field hockey
-          </p>
-          <div class="flex lg:gap-16 mt-3 flex-col lg:flex-row gap-3">
-            <p class="text-[#FF4240] text-xl font-semibold">Price - $22.00</p>
-            <div class="flex gap-2 text-xl font-semibold">
-              <img src="./Images/cart.svg" alt="" />
-              <span>Delivery Fee </span>
-              <span>: Free</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="flex flex-col items-center justify-center text-center mt-24 mb-10">
-      <h1 class="text-[#131318] font-bold text-3xl">Clients Question</h1>
-      <p class="text-[#131318] my-3">
-        Hockey is a national governing body and is responsible for the
-        management and development of the sport from grassroots to elite
-        activities.
-      </p>
-    </div>
-
-    <div class="flex flex-col lg:flex-row gap-3">
-      <div class="flex-1">
-        <img src="./Images/11.png" alt="" class="w-[600px] h-[470px]" />
-      </div>
-      <div class="flex-1 space-y-3">
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Our Equipment</div>
-          <div class="collapse-content">
-            <p>
-              In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey.
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">
-            Hockey Training
-          </div>
-          <div class="collapse-content">
-            <p>
-              Bandy has its roots in England in the 19th century, was originally called "hockey on the ice",[15] and spread 
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">
-            Private Lessons
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">Ski Touring</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">Booking</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-xl font-medium">Pricings</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5">
-    <div class="flex flex-col items-center justify-center text-center mt-24 mb-10">
-      <h1 class="text-[#131318] font-bold text-3xl">Get In Touch</h1>
-      <p class="text-[#131318] my-3">
-        Hockey is a national governing body and is responsible for the
-        management 
-      </p>
-    </div>
-  </section>
-
-  <section class="">
-    <div class="flex w-full gap-16 h-[764px] max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5 
-        flex-col lg:flex-row">
-      <div class="flex flex-col gap-5 ">
-        <div class="bg-[#BCED6D1A] lg:w-[400px] h-[200px] pt-10 pl-8">
-          <img src="./Images/phone.png" alt="" />
-          <p class="my-3">Phone Number :</p>
-          <h1 class="font-bold">(+62) 123-321-543</h1>
-        </div>
-        <div class="bg-[#FDDD5F1A] lg:w-[400px] h-[200px] pt-10 pl-8">
-          <img src="./Images/mail.png" alt="" />
-          <p class="my-3">Email :</p>
-          <h1 class="font-bold">hockeys@support.com</h1>
-        </div>
-        <div class="bg-[#629CF31A] lg:w-[400px] h-[200px] pt-10 pl-8">
-          <img src="./Images/location.png" alt="" />
-          <p class="my-3">Location :</p>
-          <h1 class="font-bold">152/1 Mohakhali Wireless Gate</h1>
-        </div>
-      </div>
-
-      <div class="">
-        <div class="flex justify-between gap-2  flex-col lg:flex-row my-8">
-          <div class="space-y-1  my-2">
-            <label for="price" class="block text-gray-600 font-bold ">
-              Your Name
-            </label>
-            <input class="w-[300px] px-4 py-3 text-gray-800 border border-rose-300 focus:outline-rose-500 rounded-md 
-                lg:w-[450px]" placeholder="Your Name" required />
-          </div>
-          <div class="space-y-1  my-2">
-            <label for="guest" class="block text-gray-600 font-bold">
-              Your Email
-            </label>
-            <input
-              class="w-[300px] lg:w-[450px]  px-4 py-3 text-gray-800 border border-rose-300 focus:outline-rose-500 rounded-md"
-              placeholder="Your Email " required />
-          </div>
-        </div>
-        <div class="flex justify-between gap-2  flex-col lg:flex-row ">
-          <div class="space-y-1 my-2">
-            <label for="price" class="block text-gray-600 font-bold">
-              Subject
-            </label>
-            <input
-              class="w-[300px] lg:w-[450px]  px-4 py-3 text-gray-800 border border-rose-300 focus:outline-rose-500 rounded-md"
-              name=" Time" id="price" placeholder="Subject" required />
-          </div>
-          <div class="space-y-1  my-2">
-            <label for="guest" class="block text-gray-600 font-bold">
-              Phone Number
-            </label>
-            <input
-              class="w-[300px] lg:w-[450px]  px-4 py-3 text-gray-800 border border-rose-300 focus:outline-rose-500 rounded-md"
-              name="total_people" id="guest" placeholder="Phone Number" required />
-          </div>
-        </div>
-        <div class="space-y-1  my-2">
-          <label for="description" class="block text-gray-600 font-bold">
-            Message
-          </label>
-          <textarea id="description"
-            class="block rounded-md focus:rose-300 w-full h-32 px-4 py-3 text-gray-800 border border-rose-300 focus:outline-rose-500 h-[290px]"
-            name="Write your message"></textarea>
-        </div>
-        <button class=" bg-[#FF4240] py-2 lg:px-96 text-white rounded-md px-28 lg:ml-5">Send Message</button>
-      </div>
-    </div>
-
-    <div class="hidden lg:block">
       <section
-        class="max-w-screen-2xl mx-auto md:px-16  px-5 bg-[#13131808] lg:w-[1170px] h-[150px]  justify-center items-center flex flex-col gap-3 ">
-        <div class=" font-bold text-2xl ">Social Media</div>
-        <div class=" flex gap-8">
-          <img src="./Images/Facebook.png" alt="">
-          <img src="./Images/Instagram.png" alt="">
-          <img src="./Images/Linkedin.png" alt="">
-          <img src="./Images/Twitter.png" alt="">
+        class="max-w-screen-2xl mx-auto md:px-16 my-5 mb-10 px-5 rounded-[150px] border-2 border-b-0 border-r-0 border-l-0 border border-[#1DD100]"
+      >
+        <div class="pt-16 text-center">
+          <h1 class="btn btn-ghost text-5xl text-[#1DD100]">AN Poribohon</h1>
+          <button class="mb-16">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </button>
         </div>
-    </div>
-  </section>
-  </section>
 
-  <section class="max-w-screen-2xl mx-auto md:px-16  px-5 bg-[#131318] lg:w-[1440px] h-[350px] text-white mt-24 hidden lg:block">
-    <footer class="footer p-10  ">
-      <div class=" mt-10">
-        <p class=" text-2xl font-semibold">Get In Touch</p>
-        <p class=" my-5 w-[200px]">In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game, and the winter ice team skating sports of bandy and ice hockey. This is due to the fact that field hockey</p>
-        <div class=" flex gap-4">
-          <img src="./Images/em.png" alt="">
-          <p>hockeys@support.com</p>
+        <div class="flex bg-[#FFFFFF]">
+          <div class="">
+            <div class="flex gap-5 mt-8 px-8">
+              <img src="./Images/bus-logo.png" />
+              <div class="">
+                <h1 class="text-2xl font-bold">AN Poribohon</h1>
+                <h3 class="font-semibold">Coach-009</h3>
+              </div>
+              <div
+                class="bg-[#E8FAE5] border border-[#1DD100] w-[200px] flex gap-1 rounded-md ml-[400px]"
+              >
+                <img
+                  src="./Images/seat-green.png"
+                  class="text-[#1DD100] mr-2"
+                />
+                <button
+                  class="text-[20px] text-[#1DD100] font-semibold ml-2 flex justify-center items-center"
+                  id="seatLeft"
+                >
+                  40 Seat Left
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F7F8F8] mt-8 ml-8 rounded-lg">
+              <div class="flex justify-between px-8 pt-3">
+                <button class="font-semibold">Route</button>
+                <button>Dhaka-Cumilla</button>
+              </div>
+              <div class="divider"></div>
+              <div class="flex justify-between px-8 pt-3">
+                <button class="font-semibold">Departer-Time</button>
+                <button>9.00 pm</button>
+              </div>
+              <div class="divider"></div>
+              <div class="ml-8 pb-10 pt-3 flex gap-16">
+                <button class="px-4 py-2 bg-[#EAEBEC] rounded-lg font-semibold">
+                  Bording-point:Cumilla
+                </button>
+                <button class="px-4 py-2 bg-[#EAEBEC] rounded-lg font-semibold">
+                  Draping-point:Dhaka
+                </button>
+                <button class="px-4 py-2 bg-[#EAEBEC] rounded-lg font-semibold">
+                  East.Time-10.00am
+                </button>
+              </div>
+            </div>
+          </div>
+          <img src="./Images/info-devider.png" alt="" />
+          <div class="flex flex-col justify-center items-center">
+            <img src="./Images/fare.png" alt="" />
+            <h3 class="font-bold text-5xl mt-3">550</h3>
+            <button>per seat</button>
+          </div>
         </div>
-        <div class=" flex gap-4">
-          <img src="./Images/tel.png" alt="">
-          <p>hockeys@support.com</p>
+
+        <div class="mt-8 bg-[#ffffff] pt-5 px-8 flex">
+          <div class="">
+            <h1 class="text-md font-bold pb-2 pt-3 text-xl">
+              Please Select Your Seat
+            </h1>
+            <hr />
+            <div class="flex justify-between py-5">
+              <div class="flex gap-2">
+                <img src="./Images/seat-gray.png" alt="" />
+                <button class="text-md font-semibold pb-2">Availavle</button>
+              </div>
+              <div class="flex gap-2">
+                <img src="./Images/seat-green-filled.png" alt="" />
+                <button class="text-md font-semibold pb-2">Selected</button>
+              </div>
+            </div>
+            <hr />
+            <div class="flex justify-between py-4">
+              <div class="">
+                <img
+                  src="./Images/images.jpg"
+                  alt=""
+                  class="w-14 px-4 py-2 bg-[#EAEBEC] rounded-lg font-semibold"
+                />
+              </div>
+              <div class="">
+                <img
+                  src="./Images/Vector.png"
+                  alt=""
+                  class="px-4 py-2 bg-[#EAEBEC] rounded-lg font-semibold"
+                />
+              </div>
+            </div>
+
+            <div id="AllSeat" class="flex">
+              <div class="flex flex-col">
+                <!-- ------------------------------------------------ -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    A
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        A1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        A2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        id="button"
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        A3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        A4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    B
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        B1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        B2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        B3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        B4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    C
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        C1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        C2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        id="button"
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        C3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        C4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    D
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        D1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        D2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        D3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        D4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    E
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        id="button"
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        E1
+                      </button>
+                      <button
+                        id="button"
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        E2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        E3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        E4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    F
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        F1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        F2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        F3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        F4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    G
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        G1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        G2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        G3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        G4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    H
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        H1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        H2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        H3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        H4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    I
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        I1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        I2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        I3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        I4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <!-- ------------------------------------------------- -->
+                <div class="flex gap-8 py-2">
+                  <button class="px-4 py-2 rounded-lg font-semibold text-md">
+                    J
+                  </button>
+                  <div class="flex gap-16">
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        J1
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        J2
+                      </button>
+                    </div>
+                    <div class="flex gap-5">
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        G3
+                      </button>
+                      <button
+                        class="para px-8 py-2 bg-[#EAEBEC] rounded-lg font-semibold text-md w-[10px] text-center flex justify-center items-center"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------------------------------------ -->
+              </div>
+            </div>
+          </div>
+
+          <img src="./Images/Line 1.png" alt="" class="mx-16 h-[750px] mt-3" />
+          <div class="py-2">
+            <h1 class="text-md font-bold pb-2 text-xl">
+              Your Selected Seats are here
+            </h1>
+            <img src="./Images/Line 2.png" alt="" class="py-8" />
+            <div class="bg-[#F7F8F8] px-8 py-5">
+              <div class="overflow-x-auto">
+                <table class="table table-zebra">
+                  <!-- head -->
+                  <thead class="pt-8">
+                    <tr>
+                      <th id="seat">
+                        Seat<sup
+                          class="text-lg bg-[#1dd100] text-white px-2 py-1 rounded-full up"
+                          id="up"
+                          >0</sup
+                        >
+                      </th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+
+                  <tbody id="place">
+                    <!-- row 1 -->
+                    <tr>
+                      <!-- <th>1</th>
+                      <td id="place"></td>
+                      <td>550</td> -->
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="my-5" />
+                <div class="flex justify-between my-5">
+                  <button class="text-md font-bold pb-2 ml-4">
+                    Total Price
+                  </button>
+                  <button class="text-md font-bold pb-2 ml-4 mr-16">
+                    BDT <span id="price">0</span>
+                  </button>
+                </div>
+
+                <div class="relative" id="Cuponfield">
+                  <input
+                    id="coupon"
+                    type="text"
+                    placeholder="Have any coupon? "
+                    class="py-3 px-8 w-[430px]"
+                  />
+                  <button
+                    disabled
+                    onclick="CupponBtnClick()"
+                    id="CouponBtn"
+                    class="text-black bg-gray-400 py-3 px-4 rounded-r-md absulate top-0"
+                  >
+                    Apply
+                  </button>
+                </div>
+
+                <div class="flex justify-between my-5">
+                  <button class="text-md font-bold pb-2 ml-4">
+                    Grand Total
+                  </button>
+                  <button class="text-md font-bold pb-2 ml-4 mr-16">
+                    BDT <span id="gprice">0</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <div class="">
+                <button class="text-md font-bold pb-2">Passenger Name*</button>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input
+                    type="text"
+                    class="grow"
+                    placeholder="Enter Your Name"
+                  />
+                </label>
+              </div>
+              <div class="">
+                <button class="text-md font-bold pb-2">Phone Number*</button>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="password" class="grow"  id="phone"/>
+                </label>
+              </div>
+              <div class="">
+                <button class="text-md font-bold pb-2">Email ID</button>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Email" />
+                </label>
+              </div>
+            </div>
+
+            <!-- <div class="px-2">
+              <a
+                disabled
+                href="#my_modal_8"
+                class="bg-[#1DD100] px-16 py-3 text-white rounded-md my-5 w-[600px] btn"
+                id="next"
+                >Next</a
+              >
+
+              <div class="modal" role="dialog" id="my_modal_8">
+                <div class="modal-box text-center py-12">
+                  <h3 class="font-bold text-3xl text-[#1DD100]">
+                    Congratulations!
+                  </h3>
+                  <button class="py-4 text-md font-semibold">
+                    Successfully you buy a Ticket
+                  </button>
+                  <img src="./Images/success.png" alt="" class="mx-auto" />
+                  <div class="modal-action">
+                    <a href="#" class="btn">OK</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="mt-8 ">
+              <button
+                id="next"
+                disabled
+                class="btn w-[600px]"
+                onclick="my_modal_1.showModal()"
+              >
+                NEXT
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <div class="modal-box text-center py-12">
+                    <h3 class="font-bold text-3xl text-[#1DD100]">
+                      Congratulations!
+                    </h3>
+                    <p>Successfully you buy a Ticket</p>
+                    <img src="./Images/success.png" alt="" class="mx-auto" />
+                    <div class="modal-action">
+                      <button
+                        id="reset"
+                        class="btn bg-[#1DD100] text-white px-5 py-2 rounded-md"
+                      >
+                        Go Home
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
         </div>
-      </div>
-      <nav >
-        <header class="mt-16" class="footer-title">Company</header>
-        <a class="link link-hover">About us</a>About us
-        <a class="link link-hover"> Leadership</a>
-        <a class="link link-hover">Careers</a>
-        <a class="link link-hover">Legal Notice</a>
-      </nav>
-      <nav class="mt-16">
-        <header class="footer-title">Support</header>
-        <a class="link link-hover">Help Center</a>
-        <a class="link link-hover">FAQ</a>
-        <a class="link link-hover">  Ticket Support</a>
-        <a class="link link-hover"> Contact Us</a>
-      </nav>
-      <nav>
-        <header class="mt-16" class="footer-title">Services</header>
-        <a class="link link-hover">Group Lesson</a>
-        <a class="link link-hover">
-          Private Lesson</a>
-        <a class="link link-hover">   Hockeys for kids</a>
-        <a class="link link-hover">        Hockeys for Adult</a>
-      </nav>
-    </footer>
-
-  </section>
-
-
-</body>
-
+      </section>
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>
